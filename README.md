@@ -28,6 +28,7 @@ yarn add live-server@1.2.0
 ## Development
 Inside your app development directory
 - create a folder inside it "public" and add a file inside public 'index.html'
+- edit the file with the following
 ``` sh
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +50,9 @@ Inside your app development directory
 </html>
 ```
 - create a folder in root directory "src" and create a file 'app.js'
+- edit with the following
 ``` sh
+<!--we have to things to render here,header and action-->
 class Header extends React.Component {
     render() {
         return (
@@ -77,5 +80,30 @@ const jsx = (
 );
 ReactDOM.render(jsx, document.getElementById("app"));
 ```
+In 'package.json' edit the scripts part
+``` sh
+{
+    "name": "Todo-App-react",
+    "version": "1.0.0",
+    "description": "todo in react,express,node",
+    "main": "index.js",
+    "scripts": {
+        "serve": "live-server public",
+        "babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch "
+    },
+    "repository": "https://github.com/Nyambura254/Todo-App-react.git",
+    "author": "BonnieNyambura <nyamburabonnie@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "babel-cli": "6.24.1",
+        "babel-preset-env": "1.5.2",
+        "babel-preset-react": "6.24.1",
+        "live-server": "1.2.0"
+    }
+}
+```
+in the file above...you give youe env server a name 'serve' and directory to search your files 'public/' and read those files
+
+
 
 
