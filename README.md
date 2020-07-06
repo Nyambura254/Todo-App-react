@@ -28,4 +28,54 @@ yarn add live-server@1.2.0
 ## Development
 Inside your app development directory
 - create a folder inside it "public" and add a file inside public 'index.html'
-- 
+``` sh
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo React app</title>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>
+```
+- create a folder in root directory "src" and create a file 'app.js'
+``` sh
+class Header extends React.Component {
+    render() {
+        return (
+            <div>
+                <h1>Todo App</h1>
+                <h2>Organizating data</h2>
+            </div>
+        );
+    }
+}
+class Actions extends React.Component {
+    render() {
+        return (
+            <div>
+                <button>Add items</button>
+            </div>
+        );
+    }
+}
+const jsx = (
+    <div>
+        <Header />
+        <Actions />
+    </div>
+);
+ReactDOM.render(jsx, document.getElementById("app"));
+```
+
+
