@@ -8,9 +8,19 @@ class Header extends React.Component {
         );
     }
 }
+class Actions extends React.Component {
+    render() {
+        return (
+            <div>
+                <button>Add items</button>
+            </div>
+        );
+    }
+}
 const jsx = (
     <div>
         <Header />
+        <Actions />
     </div>
 );
 ReactDOM.render(jsx, document.getElementById("app"));
