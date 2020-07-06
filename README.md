@@ -25,3 +25,6 @@ $ yarn add babel-cli@6.24.1 babel-preset-env@1.5.2 babel-preset-react@6.24.1
 ``` sh
 yarn add live-server@1.2.0
 ```
+## Development
+Inside your app development directory
+- create 
