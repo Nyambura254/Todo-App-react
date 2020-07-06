@@ -103,6 +103,10 @@ In 'package.json' edit the scripts part
 }
 ```
 in the file above...you give youe env server a name 'serve' and directory to search your files 'public/' and read those files
+In this part we want to see how our files in jsx is being converted to react file
+- create a folder inside public folder and name it "script"
+- inside scripts add a file "app.js" this where we will see our converted react files 
+
 
 
 
