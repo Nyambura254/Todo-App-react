@@ -1,0 +1,15 @@
+{
+  "name": "Todo-App-react",
+  "version": "1.0.0",
+  "description": "todo in react,express,node",
+  "main": "index.js",
+  "repository": "https://github.com/Nyambura254/Todo-App-react.git",
+  "author": "BonnieNyambura <nyamburabonnie@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "6.24.1",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "live-server": "1.2.0"
+  }
+}
