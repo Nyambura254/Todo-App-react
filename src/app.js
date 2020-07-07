@@ -6,11 +6,15 @@ class TodoApp extends React.Component {
         };
     }
     handleDeleteOptions() {
-        this, setState(() =>)
+        this, setState(() => {
+            return {
+                options: [],
+            };
+        });
     }
     render() {
-        // var title = "Todo tasks";
-        // var subtitle = "Focusing everyday";
+        var title = "Todo tasks";
+        var subtitle = "Focusing everyday";
         // var options = ["autumn", "summer", "spring", "winter"];
 
         return (
