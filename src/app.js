@@ -1,16 +1,15 @@
 class TodoApp extends React.Component {
     render() {
-        return (
-
-    )
+        var title = "Todo tasks";
+        var subtitle = "Focusing Everyday"
     }
 }
 class Header extends React.Component {
     render() {
         return (
             <div>
-                <h1>Todo App</h1>
-                <h2>Organizating data</h2>
+                <h1>{this.props.title}</h1>
+                <h2>{this.props.subtitle}</h2>
             </div>
         );
     }
@@ -19,19 +18,26 @@ class Actions extends React.Component {
     render() {
         return (
             <div>
-                <button>What to do</button>
+                <button onClick>What to do</button>
             </div>
         );
     }
 }
 class Options extends React.Component {
     render() {
-        return <div>Option component here</div>
+        return <div>{this.props.options.map((option) => {
+            return <Option optionText={option} />;
+        })}
+        </div>
     }
-}
+};
 class OptionsAdd extends React.Component {
+    removeAll() {
+        alert('removeAll');
+    }
     render() {
-        return <div>more and more</div>
+        return <div><button onClick={this.removeAll}>removeAll</button>
+            {this.props.options</div>
     }
 }
 // const jsx = (
