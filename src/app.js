@@ -1,8 +1,17 @@
 class TodoApp extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            options: ['autum', 'spring', 'summer', 'winter'],
+        };
+    }
+    handleDeleteOptions() {
+        this, setState(() =>)
+    }
     render() {
-        var title = "Todo tasks";
-        var subtitle = "Focusing everyday";
-        var options = ["autumn", "summer", "spring", "winter"];
+        // var title = "Todo tasks";
+        // var subtitle = "Focusing everyday";
+        // var options = ["autumn", "summer", "spring", "winter"];
 
         return (
             <div>
