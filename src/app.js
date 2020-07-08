@@ -17,6 +17,7 @@ class TodoApp extends React.Component {
             };
         });
     }
+    //handling picks
     handlePick() {
         var randomTodo = Math.floor(Math.random() * this.state.options.length);
         var option = this.state.options[randomTodo];

@@ -37,6 +37,8 @@ var TodoApp = function (_React$Component) {
                 };
             });
         }
+        //handling picks
+
     }, {
         key: "handlePick",
         value: function handlePick() {
