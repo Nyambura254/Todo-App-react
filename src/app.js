@@ -34,6 +34,7 @@ class TodoApp extends React.Component {
             };
         });
     }
+    //rendering
     render() {
         var title = "Todo tasks";
         var subtitle = "Focusing everyday";
