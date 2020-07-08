@@ -14,7 +14,7 @@ var TodoApp = function (_React$Component) {
     function TodoApp(props) {
         _classCallCheck(this, TodoApp);
 
-        //binding
+        //binding everything we pass as a props in TodoApp
         var _this = _possibleConstructorReturn(this, (TodoApp.__proto__ || Object.getPrototypeOf(TodoApp)).call(this, props));
 
         _this.handleDeleteOptions = _this.handleDeleteOptions.bind(_this);

@@ -1,7 +1,7 @@
 class TodoApp extends React.Component {
     constructor(props) {
         super(props);
-        //binding
+        //binding everything we pass as a props in TodoApp
         this.handleDeleteOptions = this.handleDeleteOptions.bind(this);
         this.handlePick = this.handlePick.bind(this);
         this.handleAddOption = this.handleAddOption.bind(this);
