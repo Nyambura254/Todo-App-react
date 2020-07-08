@@ -83,6 +83,8 @@ var TodoApp = function (_React$Component) {
 
     return TodoApp;
 }(React.Component);
+//class with component header
+
 
 var Header = function (_React$Component2) {
     _inherits(Header, _React$Component2);

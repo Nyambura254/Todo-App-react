@@ -54,7 +54,7 @@ class TodoApp extends React.Component {
         );
     }
 }
-
+//class with component header
 class Header extends React.Component {
     render() {
         return (
