@@ -9,6 +9,7 @@ class TodoApp extends React.Component {
             options: ["speaking", "designing", "writing", "running"],
         };
     }
+    //handling delete options
     handleDeleteOptions() {
         this.setState(() => {
             return {

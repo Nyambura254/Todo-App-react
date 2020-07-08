@@ -25,6 +25,8 @@ var TodoApp = function (_React$Component) {
         };
         return _this;
     }
+    //handling delete options
+
 
     _createClass(TodoApp, [{
         key: "handleDeleteOptions",
