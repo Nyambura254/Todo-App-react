@@ -23,6 +23,7 @@ class TodoApp extends React.Component {
         var option = this.state.options[randomTodo];
         alert(option);
     }
+    //handling addoption
     handleAddOption(option) {
         if (!option) {
             return "Enter valid value to add item";

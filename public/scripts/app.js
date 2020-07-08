@@ -46,6 +46,8 @@ var TodoApp = function (_React$Component) {
             var option = this.state.options[randomTodo];
             alert(option);
         }
+        //handling addoption
+
     }, {
         key: "handleAddOption",
         value: function handleAddOption(option) {
