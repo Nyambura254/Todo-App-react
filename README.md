@@ -52,13 +52,13 @@ Inside your app development directory
 - create a folder in root directory "src" and create a file 'app.js'
 - edit with the following
 ``` sh
-<!--we have to things to render here,header and action-->
+<!--we have two things to render here,header and action-->
 class Header extends React.Component {
     render() {
         return (
             <div>
                 <h1>Todo App</h1>
-                <h2>Organizating data</h2>
+                <h2>Organizing data</h2>
             </div>
         );
     }
