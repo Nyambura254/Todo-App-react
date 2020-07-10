@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "serve": "live-server public",
-        "babel": "babel src/testdata/counter.js --out-file=public/scripts/app.js --presets=env,react --watch "
+        "babel": "babel src/testdata/visibility.js --out-file=public/scripts/app.js --presets=env,react --watch "
+        "build": "webpack"
     },
     "repository": "https://github.com/Nyambura254/Todo-App-react.git",
     "author": "BonnieNyambura <nyamburabonnie@gmail.com>",
@@ -14,6 +15,7 @@
         "babel-cli": "6.24.1",
         "babel-preset-env": "1.5.2",
         "babel-preset-react": "6.24.1",
-        "live-server": "1.2.0"
+        "live-server": "1.2.0",
+        "webpack": "3.1.0"
     }
 }
