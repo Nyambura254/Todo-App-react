@@ -1,2 +1,4 @@
-var add = (a, b, c)
-export
+var add = (a, b, c) => {
+    return a + b + c;
+}
+export default add;

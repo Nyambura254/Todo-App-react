@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-console.log("react is great")
+throw new Error("Module parse failed: /home/bonnie-py-dev/Desktop/REACT/Todo-App-react/src/testdata/app1.js Unexpected token (8:11)\nYou may need an appropriate loader to handle this file type.\n| \n| var MyData =()=>{\n|     return <h1>Reading fromfunctional work</h1>;\n| };\n| ReactDOM.render(<MyData/>,document.getElementById(\"app\"));");
 
 /***/ })
 /******/ ]);
