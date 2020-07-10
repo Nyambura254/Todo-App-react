@@ -7,4 +7,4 @@ import ReactDOM from 'react-dom';
 var MyData =()=>{
     return <h1>Reading react is easy but practical is wow</h1>;
 };
-ReactDOM.render(<MyData/>,document.getElementById("app"));
+ReactDOM.render(<MyData/>,document.getElementById("app"));//render
