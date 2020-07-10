@@ -5,6 +5,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 var MyData =()=>{
-    return <h1>Reading fromfunctional work</h1>;
+    return <h1>Reading raect is easy but practical is wow</h1>;
 };
 ReactDOM.render(<MyData/>,document.getElementById("app"));
