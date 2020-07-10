@@ -3,6 +3,7 @@
 // console.log(add(1, 2, 3));
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ToggleVisible from  './visibilty.js'
 //create a function
 var MyData =()=>{
     return <h1>Reading react is easy but practical is wow</h1>;

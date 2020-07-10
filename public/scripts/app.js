@@ -1,5 +1,9 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16,26 +20,20 @@ var ToggleVisible = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (ToggleVisible.__proto__ || Object.getPrototypeOf(ToggleVisible)).call(this, props));
 
-        _this.showButton = _this.showButton.bind(_this);
-        _this.hideButton = _this.hideButton.bind(_this);
+        _this.toggleVisible = _this.toggleVisible.bind(_this);
         _this.state = {
-            isActive: false
+            visible: false
         };
         return _this;
     }
 
     _createClass(ToggleVisible, [{
-        key: "showButton",
-        value: function showButton() {
-            this.setState({
-                isActive: true
-            });
-        }
-    }, {
-        key: "hideButton",
-        value: function hideButton() {
-            this.setState({
-                isActive: false
+        key: "toggleVisible",
+        value: function toggleVisible() {
+            this.setState(function (prevState) {
+                return {
+                    visible: !prevState.visible
+                };
             });
         }
     }, {
@@ -49,20 +47,16 @@ var ToggleVisible = function (_React$Component) {
                     null,
                     "Visibility Toggle"
                 ),
-                this.state.isActive && React.createElement(
+                React.createElement(
+                    "button",
+                    { onClick: this.toggleVisible },
+                    this.state.visible ? "See Me" : "Hide Me",
+                    " "
+                ),
+                this.state.visible && React.createElement(
                     "p",
                     null,
-                    "Hi. here are your details you can now see"
-                ),
-                React.createElement(
-                    "button",
-                    { onClick: this.showButton },
-                    "Can You See Me"
-                ),
-                React.createElement(
-                    "button",
-                    { onClick: this.hideButton },
-                    "Noooo"
+                    "Hi. here are your details tou can see now"
                 )
             );
         }
@@ -72,3 +66,4 @@ var ToggleVisible = function (_React$Component) {
 }(React.Component);
 
 ReactDOM.render(React.createElement(ToggleVisible, null), document.getElementById("app"));
+exports.default = ToggleVisible;

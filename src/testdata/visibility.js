@@ -1,33 +1,31 @@
 class ToggleVisible extends React.Component {
     constructor(props) {
         super(props)
-        this.showButton = this.showButton.bind(this);
-        this.hideButton = this.hideButton.bind(this);
+        this.toggleVisible = this.toggleVisible.bind(this);
         this.state = {
-            isActive:false
-         }
+            visible:false
+         };
         }
-         showButton () {
-             this.setState({
-                 isActive: true
-             })
-         }
-       
-         hideButton () {
-             this.setState({
-                 isActive: false
-             })
+         toggleVisible(){
+             this.setState((prevState)=>{
+                 return {
+                     visible: !prevState.visible,
+                 };
+             });
          }
        
           render(){
               return(
                   <div>
                       <h1>Visibility Toggle</h1>
-                   {this.state.isActive && <p>Hi. here are your details you can now see</p>}
-                    <button onClick={this.showButton}>Can You See Me</button>
-                    <button onClick={this.hideButton}>Noooo</button>
+                    <button onClick={this.toggleVisible}>
+                        {this.state.visible? "See Me" : "Hide Me"} </button>
+                        {this.state.visible && (<p>Hi. here are your details tou can see now</p>
+                        )}
+                   
                   </div>
               )
           }
        }
        ReactDOM.render(<ToggleVisible/>, document.getElementById("app"));
+export default ToggleVisible;

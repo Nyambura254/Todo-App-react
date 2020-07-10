@@ -505,19 +505,24 @@ var _reactDom = __webpack_require__(9);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _visibilty = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./visibilty.js\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var _visibilty2 = _interopRequireDefault(_visibilty);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// console.log("react is great")
-// import add from './app2.js';
-// console.log(add(1, 2, 3));
+//create a function
 var MyData = function MyData() {
     return _react2.default.createElement(
         'h1',
         null,
-        'Reading raect is easy but practical is wow'
+        'Reading react is easy but practical is wow'
     );
-};
-_reactDom2.default.render(_react2.default.createElement(MyData, null), document.getElementById("app"));
+}; // console.log("react is great")
+// import add from './app2.js';
+// console.log(add(1, 2, 3));
+
+_reactDom2.default.render(_react2.default.createElement(MyData, null), document.getElementById("app")); //render
 
 /***/ }),
 /* 6 */
