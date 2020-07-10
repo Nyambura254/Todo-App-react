@@ -514,7 +514,7 @@ var MyData = function MyData() {
     return _react2.default.createElement(
         'h1',
         null,
-        'Reading fromfunctional work'
+        'Reading raect is easy but practical is wow'
     );
 };
 _reactDom2.default.render(_react2.default.createElement(MyData, null), document.getElementById("app"));
