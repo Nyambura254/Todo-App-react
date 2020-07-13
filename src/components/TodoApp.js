@@ -1,10 +1,9 @@
 
 import React from "react";
-import Header from "./header";
-import Action from "./action";
-import Options from "./options";
-import AddOption from "./addOption";
-import Option from "./Option"
+import Header from "./Header";
+import Action from "./Action";
+import Options from "./Options";
+import AddOption from "./AddOption";
 class TodoApp extends React.Component {
     constructor(props) {
       super(props);
