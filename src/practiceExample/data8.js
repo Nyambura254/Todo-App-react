@@ -1,3 +1,6 @@
+import React from "react";
+
+
 class App extends React.Component {
    constructor(props) {
       super(props);
@@ -31,4 +34,4 @@ class Content extends React.Component {
    }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+export default App;

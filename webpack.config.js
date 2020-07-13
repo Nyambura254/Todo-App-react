@@ -1,6 +1,6 @@
 var path = require('path');
 module.exports = {
-    entry: './src/app.js',
+    entry: './src/practiceExample/data1.js',
     output: {
         path: path.join(__dirname, "public"),
         filename: "bundle.js"

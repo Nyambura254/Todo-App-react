@@ -1,3 +1,5 @@
+import React from "react";
+
 class TodoApp extends React.Component {
   constructor(props) {
     super(props);
@@ -60,7 +62,4 @@ class TodoList extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <TodoApp />,
-  document.getElementById('todos-example')
-);
+export default TodoApp;
