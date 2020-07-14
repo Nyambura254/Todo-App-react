@@ -1,9 +1,11 @@
 
+//import 
 import React from "react";
 import Header from "./Header";
 import Action from "./Action";
 import Options from "./Options";
 import AddOption from "./AddOption";
+//component TodoApp
 class TodoApp extends React.Component {
     constructor(props) {
       super(props);
