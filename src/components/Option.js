@@ -3,8 +3,7 @@ const Option = (props) => {
     return (
       <div>
         {props.optionText}
-        <button
-          onClick={(evt) => {
+        <button onClick={(evt) => {
             props.deleteItem(props.optionText);
           }}
         >
