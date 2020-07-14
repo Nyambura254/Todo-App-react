@@ -53,6 +53,7 @@ class TodoApp extends React.Component {
       return (
         <div>
           <Header title={title} subtitle={subtitle} />
+          <div className="container">
           <Action
             hasOptions={this.state.options.length > 0}
             handleTodo={this.handlePick}
@@ -63,6 +64,7 @@ class TodoApp extends React.Component {
             deleteOption={this.deleteOption}
           />
           <AddOption handleOption={this.handleAddOption} />
+        </div>
         </div>
       );
     }
