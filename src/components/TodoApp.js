@@ -60,7 +60,7 @@ class TodoApp extends React.Component {
             hasOptions={this.state.options.length > 0}
             handleTodo={this.handlePick}
           />
-      
+      <div className="widget"/>
           <Options
             options={this.state.options}
             deleteOptions={this.handleDeleteOptions}
