@@ -5,6 +5,17 @@
 or
 - If you want your app on github, log in to your github and create a new repo
 - clone it in your local machine and cd into your file app folder
+OR
+- you can clone this repository in your local machine - using (git clone https://github.com/Nyambura254/Todo-App-react.git)
+- cd into your files directory and open with your text editor, to instal dependancies
+``` sh
+  yarn install/ npm intall
+```
+- to run your react-app
+``` sh 
+   yarn run serve / npm run serve
+```
+
 
 ## Installations
 Ensure you have the latest node installed 
