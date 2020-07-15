@@ -9,7 +9,7 @@ OR
 - you can clone this repository in your local machine - using (git clone https://github.com/Nyambura254/Todo-App-react.git)
 - cd into your files directory and open with your text editor, to instal dependancies
 ``` sh
-  yarn install/ npm intall
+  yarn install/ npm install
 ```
 - to run your react-app
 ``` sh 
