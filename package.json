@@ -6,7 +6,12 @@
     "scripts": {
         "serve": "webpack-dev-server",
         "babel": "babel src/testdata/visibility.js --out-file=public/scripts/app.js --presets=env,react --watch ",
-        "build": "webpack"
+        "build": "webpack",
+        "prod": "webpack -p --env production",
+        "start": "node server/server.js",
+        "heroku-postbuild": "npm run build"
+
+
     },
     "repository": "https://github.com/Nyambura254/Todo-App-react.git",
     "author": "BonnieNyambura <nyamburabonnie@gmail.com>",
@@ -18,6 +23,8 @@
         "babel-preset-env": "1.5.2",
         "babel-preset-react": "6.24.1",
         "css-loader": "0.28.4",
+        "express": "^4.17.1",
+        "extract-text-webpack-plugin": "^3.0.0",
         "live-server": "1.2.0",
         "node-sass": "^4.14.1",
         "normalize.css": "^8.0.1",
